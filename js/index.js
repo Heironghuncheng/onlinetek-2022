@@ -51,6 +51,7 @@ function createSelectOption(e, t, n) {
         $(n).parent().children().css("border-bottom-width", "0.5rem");
         $(n).css("border-top-width", "0.5rem");
         $(n).css("border-bottom-width", "0");
+        setTimeout("$('#box').fullpage.moveSectionDown()",300);
         selected[e] = t
     }
 }
