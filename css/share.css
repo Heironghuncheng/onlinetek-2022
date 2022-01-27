@@ -1,0 +1,25 @@
+canvas {
+    display: none
+}
+
+img {
+    width: 100%
+}
+
+#tips {
+    display: flex;
+    position: fixed;
+    height: 20%;
+    width: 100%;
+    top: 80%;
+    left: 0;
+    justify-content: center;
+    background-color: #000;
+    opacity: .7
+}
+
+#tips p {
+    align-self: center;
+    color: #fff;
+    text-align: center
+}
