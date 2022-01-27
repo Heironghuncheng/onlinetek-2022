@@ -121,7 +121,8 @@ function eventBind() {
         }
     }
     $("#start-button").on("click", function () {
-        $("#box").fullpage.moveSectionDown()
+        $("#box").fullpage.moveSectionDown();
+        $("#box").fullpage.setAllowScrolling(true)
     });
     $("#draw-button").on("click", function () {
         let t = getResultId();
@@ -138,7 +139,8 @@ function eventBind() {
 function pluginInit() {
     $("#box").fullpage({scrollBar: true, resize: true, scrollingSpeed: 1e3});
     let e = new WOW({boxClass: "wow", animateClass: "animated", offset: 0, mobile: true, live: true});
-    e.init()
+    e.init();
+    $("#box").fullpage.setAllowScrolling(false);
 }
 
 $(document).ready(function () {
